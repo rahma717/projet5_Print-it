@@ -31,7 +31,7 @@ arrowRightElement.addEventListener("click", myFunctionRight);
 
 function myFunctionRight() {
 
-	selectedImage=selectedImage+1;
+	selectedImage++;
 	if(selectedImage==slides.length+1){
 		selectedImage=1;
 	}
@@ -45,7 +45,7 @@ function myFunctionRight() {
 arrowLeftElement.addEventListener("click", myFunctionLeft);
 
 function myFunctionLeft() {
-	selectedImage=selectedImage-1;
+	selectedImage--;
 	if(selectedImage==0){
 		selectedImage=slides.length;
 	}
